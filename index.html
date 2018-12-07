@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>WebApp-JCQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="wrap" id="wrap">
+        <h1>Por favor espere...</h1>
+        <div class="preloader"></div>
+    </div>
+
+    <div id="btn-1"></div>
+    <div id="btn-2"></div>
+    <div id="btn-3"></div>
+    <div id="btn-4"></div>
+    <div id="btn-5"></div>
+    <div id="btn-6"></div>
+    <div id="btn-7"></div>
+    <div id="btn-8"></div>
+    
+    <div class="intro">
+        <h1>Bienvenidos!</h1>
+        <h2>Torre Empresarial Las Reynas</h2>
+        <p>
+            De antemanos un cordial saludo y total agradecimiento por la oportunidad que nos brindan, para poder
+            mostrarles nuestros productos y servicios.
+            <br><br>
+            El contenido de esta presentacion es totalmente interactivo para su comodidad, haga click en la diferentes
+            areas del ascensor para obtener detalles . Los circulos parpadeantes indican la condicion
+            en que se encuentran los componentes de su ascensor al momento de la inspeccion, siendo:
+            <br><br>
+            <ul>
+                <li>Rojo: estado critico, se recomienda reemplazar a corto plazo.</li>
+                <li>Amarillo: estado aceptable reemplazar a mediado plazo.</li>
+                <li>Azul: Estado normal.</li>
+            </ul>
+             
+        </p>
+    </div>
+    <div class="footer">
+        <p>&copy JCQ, Ingenieria en Ascensores,Srl-Todos los derechos reservados 2019</p>
+    </div>
+
+    <!--#####################################################################################################################################-->
+    <!--ventana modal maquina de traccion contenedor-->
+    <div id="container" class="container">
+
+        <div class="modal-1">
+            <span class="cerrar">&times;</span>
+            <h2>Motor y maquina de traccion</h2>
+            <hr>
+            <img src="img/001.png" alt="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque vero eum minus. Quidem
+                illo
+                impedit, cumque laboriosam molestias, corporis placeat vel iste quisquam in iure aliquam nemo illum
+                quae.
+            </p>
+            <a href="#">Saber mas</a>
+        </div>
+
+    </div>
+
+    <div id="container-1" class="container-1">
+
+        <div class="modal-1">
+            <span class="cerrar">&times;</span>
+            <h2>Maniobra de Control</h2>
+            <hr>
+            <img src="img/001.png" alt="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque vero eum minus. Quidem
+                illo
+                impedit, cumque laboriosam molestias, corporis placeat vel iste quisquam in iure aliquam nemo illum
+                quae.
+            </p>
+            <a href="#">Saber mas</a>
+        </div>
+
+    </div>
+
+
+    <!--java script-->
+
+    <script>
+
+        /*contenido de motor y maquina de traccion*/
+        var container = document.getElementById('container');
+        var btn = document.getElementById("btn-1");
+        var cerrar = document.getElementsByClassName("cerrar")[0];
+
+        btn.onclick = function () {
+            container.style.display = "block";
+        }
+        cerrar.onclick = function () {
+            container.style.display = "none";
+        }
+
+
+         window.onload = function(){
+            var wrap = document.getElementById('wrap');
+            wrap.style.visibility = 'hidden';
+            wrap.style.opacity = '1';
+       }
+
+    </script>
+
+</body>
+
+</html>
